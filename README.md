@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <h2 align="center">Sisal_Case_Demo (08.2022)</h2>
+  <h2 align="center">Java_Vue_Product_CRUD_Template_With_Jwt (08.2022)</h2>
   <p align="center">
     Backend : <a href="https://github.com/kenanyasinsarigul/Java_Vue_Product_CRUD_Template_With_Jwt/tree/main/backend">JAVA</a>
     Frontend : <a href="https://github.com/kenanyasinsarigul/Java_Vue_Product_CRUD_Template_With_Jwt/tree/main/frontend">VUEJS</a>
