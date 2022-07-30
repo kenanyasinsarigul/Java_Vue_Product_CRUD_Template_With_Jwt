@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "ee0a7d4e-5925-4ee7-b979-3db1f544b4d6",
+		"name": "ProdutCRUDTemplate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Accounts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/account?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"kenansarigul97@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"kenansarigul97@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"name\": \"Kenan Yasin\",\r\n    \"surname\": \"Sarıgül\",\r\n    \"phone\": null,\r\n    \"address\": null,\r\n    \"birthday\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Kenan Yasin\",\r\n    \"surname\": \"Sarıgül\",\r\n    \"phone\": null,\r\n    \"address\": null,\r\n    \"birthday\": null,\r\n    \"auth\": {\r\n        \"id\": 1,\r\n        \"email\": \"kenansarigul97@gmail.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrZW5hbnNhcmlndWw5N0BnbWFpbC5jb20iLCJleHAiOjE2NzM3MTEzMDQsImlhdCI6MTY1OTE5NjEwNH0.OfUswo2W_W9tfz9hNdRvBY_wLkXbcTNFVPRsYvL4VAkb2I3R9EGs5iLgVqPlSd6towk2--Qh4ENrq_teWTBJAQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrZW5hbnNhcmlndWw5N0BnbWFpbC5jb20iLCJleHAiOjE2NzM3MTEzMDQsImlhdCI6MTY1OTE5NjEwNH0.OfUswo2W_W9tfz9hNdRvBY_wLkXbcTNFVPRsYvL4VAkb2I3R9EGs5iLgVqPlSd6towk2--Qh4ENrq_teWTBJAQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"productName\": \"Hp Laptop\",\r\n        \"productType\": \"Electronic\",\r\n        \"productCount\": 1,\r\n        \"productCost\": 1500,\r\n        \"createdAt\": \"2022-07-30T18:45:45.156174\",\r\n        \"updatedAt\": \"2022-07-30T18:45:45.157174\",\r\n        \"owner\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrZW5hbnNhcmlndWw5N0BnbWFpbC5jb20iLCJleHAiOjE2NzM3MTEzMDQsImlhdCI6MTY1OTE5NjEwNH0.OfUswo2W_W9tfz9hNdRvBY_wLkXbcTNFVPRsYvL4VAkb2I3R9EGs5iLgVqPlSd6towk2--Qh4ENrq_teWTBJAQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"productName\": \"Asus Laptop\",\r\n        \"productType\": \"Electronic\",\r\n        \"productCount\": 1,\r\n        \"productCost\": 1500,\r\n        \"createdAt\": \"2022-07-30T18:45:45.156174\",\r\n        \"updatedAt\": \"2022-07-30T18:45:45.157174\",\r\n        \"owner\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrZW5hbnNhcmlndWw5N0BnbWFpbC5jb20iLCJleHAiOjE2NzM3MTEzMDQsImlhdCI6MTY1OTE5NjEwNH0.OfUswo2W_W9tfz9hNdRvBY_wLkXbcTNFVPRsYvL4VAkb2I3R9EGs5iLgVqPlSd6towk2--Qh4ENrq_teWTBJAQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"2"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
