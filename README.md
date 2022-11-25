@@ -20,7 +20,7 @@
   </p>
 </p>
 
-## Screen Shots of The Project
+## Screenshots of The Project
 
 ![home](https://user-images.githubusercontent.com/51781007/181923382-41dff9e6-47a0-4a91-a2f5-cc61bb5d7bf6.png)
 ![homeLogged](https://user-images.githubusercontent.com/51781007/181925403-9f79fe47-6dc3-444b-af78-2e343029e681.png)
